@@ -1,11 +1,11 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import './App.css';
-import Home from './components/pages/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import SignUp from './components/pages/SignUp';
+import React from "react";
+import Navbar from "./components/Navbar";
+import "./App.css";
+import Home from "./components/pages/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Relatorios from "./components/pages/Relatorios";
+import Admin from "./components/pages/Admin";
+import SignUp from "./components/pages/SignUp";
 
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
+          <Route path="/" exact component={Home} />
+          <Route path="/relatorios" component={Relatorios} />
+          <Route path="/admin" component={Admin} />
+          <Route path="/sign-up" component={SignUp} />
         </Switch>
       </Router>
     </>
