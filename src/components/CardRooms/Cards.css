@@ -1,6 +1,13 @@
 .topo-dia-mes {
   display: grid;
-  grid-template-columns: auto auto;
+  padding-top: 26px;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.h1 {
+  font-size: 6px;
+  font-weight: 280;
 }
 
 /* hr.dimensao {

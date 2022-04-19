@@ -12,7 +12,7 @@ function Cards() {
           <h1>Mes: 1000 000 MT</h1>
         </div>
       </div>
-      {/* <hr className="dimensao" /> */}
+      <hr className="dimensao" />
       <br />
       <div class="container">
         <ul>
@@ -22,7 +22,8 @@ function Cards() {
             <span>Ocupado</span>
             <p>35 min</p>
           </li>
-          <li></li>
+          <li>
+            {" "}
             <div class="bottom1">Quarto 02</div> 35 min{" "}
           </li>
           <li>
