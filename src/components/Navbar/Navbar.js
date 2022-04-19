@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "./Button";
+import { Button } from "../Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -41,7 +41,7 @@ function Navbar() {
                 Pagina Inicial
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="/relatorios"
                 className="nav-links"
@@ -54,7 +54,7 @@ function Navbar() {
               <Link to="/admin" className="nav-links" onClick={closeMobileMenu}>
                 Admin
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link

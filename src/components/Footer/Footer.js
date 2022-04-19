@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { Button } from "./Button";
+import { Button } from "../Button";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -9,13 +9,13 @@ function Footer() {
       <section class="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            <Link to="/" className="social-logo">
+            {/* <Link to="/" className="social-logo">
               Rooms
-              {/* <i class="fab fa-typo3" /> */}
-            </Link>
+              <i class="fab fa-typo3" />
+            </Link> */}
           </div>
           <small class="website-rights">Rooms © 2022</small>
-          <div class="social-icons">
+          {/* <div class="social-icons">
             <Link
               class="social-icon-link facebook"
               to="/"
@@ -56,7 +56,7 @@ function Footer() {
             >
               <i class="fab fa-linkedin" />
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
