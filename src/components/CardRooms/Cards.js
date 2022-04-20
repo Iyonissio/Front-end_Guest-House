@@ -23,32 +23,25 @@ function Cards() {
             <p>35 min</p>
           </li>
           <li>
-            {" "}
-            <div class="bottom1">Quarto 02</div> 35 min{" "}
+            <div class="bottom1">Quarto 02</div> 35 min
           </li>
           <li>
-            {" "}
-            <div class="bottom">Quarto 03</div> 35 min{" "}
+            <div class="bottom">Quarto 03</div> 35 min
           </li>
           <li>
-            {" "}
-            <div class="bottom">Quarto 04</div> 35 min{" "}
+            <div class="bottom">Quarto 04</div> 35 min
           </li>
           <li>
-            {" "}
-            <div class="bottom">Quarto 05</div> 35 min{" "}
+            <div class="bottom">Quarto 05</div> 35 min
           </li>
           <li>
-            {" "}
-            <div class="bottom">Quarto 06</div> 35 min{" "}
+            <div class="bottom">Quarto 06</div> 35 min
           </li>
           <li>
-            {" "}
-            <div class="bottom">Quarto 07</div> 35 min{" "}
+            <div class="bottom">Quarto 07</div> 35 min
           </li>
           <li>
-            {" "}
-            <div class="bottom">Quarto 08</div> 35 min{" "}
+            <div class="bottom">Quarto 08</div> 35 min
           </li>
         </ul>
       </div>

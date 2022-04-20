@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Relatorios from "./components/pages/Relatorios";
 import Admin from "./components/pages/Admin";
-import SignUp from "./components/pages/SignUp";
+import Login from "./components/pages/Login";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/relatorios" component={Relatorios} />
           <Route path="/admin" component={Admin} />
-          <Route path="/sign-up" component={SignUp} />
+          <Route path="/login" component={Login} />
         </Switch>
       </Router>
     </>

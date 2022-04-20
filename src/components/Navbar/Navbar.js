@@ -30,7 +30,6 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             Rooms
-            {/* <i class="fab fa-typo3" /> */}
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -41,24 +40,9 @@ function Navbar() {
                 Pagina Inicial
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link
-                to="/relatorios"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Relatorios
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/admin" className="nav-links" onClick={closeMobileMenu}>
-                Admin
-              </Link>
-            </li> */}
-
             <li>
               <Link
-                to="/sign-up"
+                to="/login"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
