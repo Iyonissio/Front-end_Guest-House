@@ -40,7 +40,7 @@ function Navbar() {
                 Pagina Inicial
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/login"
                 className="nav-links-mobile"
@@ -48,9 +48,9 @@ function Navbar() {
               >
                 Login
               </Link>
-            </li>
+            </li> */}
           </ul>
-          {button && <Button buttonStyle="btn--outline">Login</Button>}
+          {/* {button && <Button buttonStyle="btn--outline">Login</Button>} */}
         </div>
       </nav>
     </>

@@ -1,9 +1,9 @@
 import React from "react";
 import "../../App.css";
 import Cards from "../CardRooms/Cards";
-import HeroSection from "../HeroSection";
+// import HeroSection from "../HeroSection";
 import Footer from "../Footer/Footer";
-import AntCards from "../CardRooms/BasicCard";
+// import AntCards from "../CardRooms/BasicCard";
 
 function Home() {
   return (
