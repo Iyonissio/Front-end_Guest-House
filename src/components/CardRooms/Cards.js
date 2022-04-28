@@ -13,7 +13,8 @@ const classes = {
   paper: {
     height: 100,
     backgroundColor: 'red',
-    padding: 20,
+    paddingBotton: 1,
+    paddingTop: 20,
     textAlign: "center",
     color: "black",
     fontWeight: 600,
@@ -22,7 +23,8 @@ const classes = {
   available: {
     height: 100,
     backgroundColor: 'white',
-    padding: 20,
+    paddingBotton: 1,
+    paddingTop: 20,
     textAlign: "center",
     color: "black",
     fontWeight: 600,
