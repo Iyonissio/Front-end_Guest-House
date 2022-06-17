@@ -99,18 +99,18 @@ function Cards() {
   return (
     <>
       <div style={classes.root}>
-       
+
         <Paper elevation={3} >
           <br />
-          
+
           <Container>
-          <div className="main-pricing">
-            <div className="today">Hoje: 17600</div>
-            <div className="month">Mês: 223400</div>
-          </div>
-          <br/>
-          <hr />
-          <br/>
+            <div className="main-pricing">
+              <div className="today">Hoje: 17600</div>
+              <div className="month">Mês: 223400</div>
+            </div>
+            <br />
+            <hr />
+            <br />
             <Grid container spacing={1}>
               <Grid item xs={3} sm={1}>
                 <Paper style={classes.paper} elevation={4}>
