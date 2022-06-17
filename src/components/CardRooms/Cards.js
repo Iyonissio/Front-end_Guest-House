@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
 import Grid from "@mui/material/Grid";
 import Button from '@mui/material/Button';
+import QuartoFoto from './../../assets/room.jpeg';
 //create our styles
 const classes = {
   root: {
@@ -59,6 +60,7 @@ function Cards() {
               <Grid item xs={4} sm={2}>
                 <Paper style={classes.paper} elevation={4}>
                   Quarto 1
+                  {/* <img src={QuartoFoto} /> */}
                   <br />
                   <p style={classes.p}>35 Min</p>
                   <h1 style={classes.p}>jhk Min</h1>
