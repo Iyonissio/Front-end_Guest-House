@@ -7,7 +7,6 @@ import Grid from "@mui/material/Grid";
 import Button from '@mui/material/Button';
 import QuartoFoto from './../../assets/room.jpeg';
 //create our styles
-
 // const classes = {
 //   root: {
 //     flexGrow: 1,
@@ -74,25 +73,30 @@ const classes = {
   },
 
   pa: {
-    color: "blue",
+
     fontWeight: 400,
     fontFamily: "Roboto"
   },
-
   paragraph: {
     fontSize: 25
+  },
+  report: {
+    color: "blue",
   }
 };
 
 
 function closeRoom() {
-  window.confirm("Deseja ocupar o quarto?")
+  // window.confirm("Deseja ocupar o quarto?")
 }
 
 function viewReports() {
   alert("Ver relatórios.")
 }
 
+function viewOption() {
+  alert("Abrir steper");
+}
 
 
 function Cards() {
@@ -102,17 +106,17 @@ function Cards() {
 
         <Paper elevation={3} >
           <br />
-
           <Container>
             <div className="main-pricing">
               <div className="today">Hoje: 17600</div>
               <div className="month">Mês: 223400</div>
             </div>
             <br />
+            <br />
             <hr />
             <br />
             <Grid container spacing={1}>
-              <Grid item xs={3} sm={1}>
+              <Grid onClick={viewOption} item xs={3} sm={1}>
                 <Paper style={classes.paper} elevation={4}>
                   <p style={classes.paragraph}>&nbsp;01</p>
                   {/* <img src={QuartoFoto} /> */}
@@ -121,14 +125,14 @@ function Cards() {
               </Grid>
               <Grid item xs={3} sm={2}>
                 <Paper style={classes.paper} elevation={4} >
-                  <p style={classes.paragraph}>&nbsp;03</p>
+                  <p style={classes.paragraph}>&nbsp;02</p>
                   <p style={classes.p}>&nbsp;35min</p>
                 </Paper>
               </Grid>
               <Grid item xs={3} sm={2}>
                 <Paper style={classes.available} elevation={4} >
-                  <p style={classes.paragraph}>&nbsp;06</p>
-                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth variant="text">Disponivel</Button>
+                  <p style={classes.paragraph}>&nbsp;03</p>
+                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth color="success" variant="text">Disponivel</Button>
                 </Paper>
               </Grid>
               <Grid item xs={3} sm={2}>
@@ -139,8 +143,14 @@ function Cards() {
               </Grid>
               <Grid item xs={3} sm={2}>
                 <Paper style={classes.available} elevation={4} >
+                  <p style={classes.paragraph}>&nbsp;05</p>
+                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth color="success" variant="text">Disponivel</Button>
+                </Paper>
+              </Grid>
+              <Grid item xs={3} sm={2}>
+                <Paper style={classes.paper} elevation={4} >
                   <p style={classes.paragraph}>&nbsp;06</p>
-                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth variant="text">Disponivel</Button>
+                  <p style={classes.p}>&nbsp;35min</p>
                 </Paper>
               </Grid>
               <Grid item xs={3} sm={2}>
@@ -150,15 +160,9 @@ function Cards() {
                 </Paper>
               </Grid>
               <Grid item xs={3} sm={2}>
-                <Paper style={classes.paper} elevation={4} >
-                  <p style={classes.paragraph}>&nbsp;08</p>
-                  <p style={classes.p}>&nbsp;35min</p>
-                </Paper>
-              </Grid>
-              <Grid item xs={3} sm={2}>
                 <Paper style={classes.available} elevation={4} >
-                  <p style={classes.paragraph}>&nbsp;02</p>
-                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth variant="text">Disponivel</Button>
+                  <p style={classes.paragraph}>&nbsp;08</p>
+                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth color="success" variant="text">Disponivel</Button>
                 </Paper>
               </Grid>
               <Grid item xs={3} sm={2}>
@@ -170,7 +174,7 @@ function Cards() {
               <Grid item xs={3} sm={2}>
                 <Paper style={classes.available} elevation={4} >
                   <p style={classes.paragraph}>&nbsp;10</p>
-                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth variant="text">Disponivel</Button>
+                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth color="success" variant="text">Disponivel</Button>
                 </Paper>
               </Grid>
               <Grid item xs={3} sm={2}>
@@ -206,7 +210,7 @@ function Cards() {
               <Grid item xs={3} sm={2}>
                 <Paper style={classes.available} elevation={4} >
                   <p style={classes.paragraph}>16</p>
-                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth variant="text">Disponivel</Button>
+                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth color="success" variant="text">Disponivel</Button>
                 </Paper>
               </Grid>
               <Grid item xs={3} sm={2}>
@@ -218,7 +222,7 @@ function Cards() {
               <Grid item xs={3} sm={2}>
                 <Paper style={classes.available} elevation={4} >
                   <p style={classes.paragraph}>&nbsp;18</p>
-                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth variant="text">Disponivel</Button>
+                  <Button size="small" style={classes.pa} onClick={closeRoom} fullWidth color="success" variant="text">Disponivel</Button>
                 </Paper>
               </Grid>
               <Grid item xs={3} sm={2}>
@@ -227,7 +231,7 @@ function Cards() {
                   <p style={classes.p}>&nbsp;35min</p>
                 </Paper>
               </Grid>
-              <Grid item xs={3} sm={2}>
+              <Grid onc item xs={3} sm={2}>
                 <Paper style={classes.paper} elevation={4} >
                   <p style={classes.paragraph}>&nbsp;20</p>
                   <p style={classes.p}>&nbsp;35min</p>
@@ -236,7 +240,7 @@ function Cards() {
             </Grid>
             <br />
             <br />
-            <Button size="small" style={classes.pa} onClick={viewReports} fullWidth variant="outlined">Relatórios</Button>
+            <Button size="small" style={classes.report} onClick={viewReports} fullWidth variant="outlined">Relatórios</Button>
           </Container>
           <br />
           <br />
@@ -245,5 +249,6 @@ function Cards() {
     </>
   );
 }
+
 
 export default Cards;

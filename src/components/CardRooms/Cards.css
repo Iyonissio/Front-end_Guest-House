@@ -1,7 +1,9 @@
 .today {
     float: left;
+    font-size: 20px;
 }
 
 .month {
     float: right;
+    font-size: 20px;
 }
